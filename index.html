@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <title>RoNight+ | Home</title>
+    <style>
+
+.btn{
+
+color:rgb(200,200,200);
+background-color: rgb(46,46,46);
+border-radius: 6px;
+border-style: none;
+font-size: x-large;
+display: table-column;
+font-family: raleway bold,Tahoma,sans-serif;
+font-style: italic;
+column-gap: 12px;
+transition-duration: 0.25s;
+margin-top: 7px;
+margin-left: 4px;
+}
+
+.headerLinks{
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1px;
+    font-size: 20px;
+    font-family:Arial;
+    border: transparent;
+    border-radius: 14px;
+    transition-duration: 0.35s;
+    cursor: pointer;
+}
+
+.headerLinks:hover{
+    color: rgb(223, 223, 223);
+    background-color: rgb(45,45,45);
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: rgb(210, 210, 210);
+    background: rgb(50,50,50);
+}
+
+.topbar{
+    background-color: rgb(35,35,35);
+    height: 50px;
+    width: 283px;
+    opacity: 0.90;
+    margin: 0 auto;
+    transition-duration: 0.845s;
+    border-radius: 4px;
+
+}
+
+.topbar:hover{
+    opacity: 1;
+}
+
+.logotopbar{
+    background-color: rgb(35,35,35);
+    border-radius: 16px;
+    height: 48px;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0.90;
+    float:left;
+    margin-left: 5px;
+    transition-duration: 0.25s;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotopbar:hover{
+    opacity: 1;
+}
+
+.logo{
+    background-size: contain;
+    width: fit-content;
+    height: 25px;
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.25));
+    margin-top: 5px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.normaldiv{
+    background-color: rgb(35,35,35);
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+    opacity: 0.90;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    transition-duration: 0.35s;
+}
+
+.normaldiv:hover{
+    opacity: 1;
+}
+
+
+.socialbuttons{
+    width: 35px;
+    height: 45px;
+    color:rgb(200,200,200);
+    background-color: rgb(46,46,46);
+    border-radius: 6px;
+    border-style: none;
+    font-size: medium;
+    display: table-column;
+    font-family: raleway bold,Tahoma,sans-serif;
+    font-style: italic;
+    column-gap: 12px;
+}
+
+.text{
+    color: rgb(200,200,200);
+    background-color: transparent;
+    transition-duration: 0.35s;
+}
+
+.text:hover{
+    color: rgb(233,233,233);
+}
+
+.container{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    background-color: #222222;
+    border-radius: 14px;
+    display: flex;
+    margin-right: 100px;
+    justify-content: center;
+    align-items:baseline;
+    text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background: url(https://ropro.io/images/Background.svg) no-repeat;
+    background-color: #3a3f44;
+    background-size: 100% 150%;
+    margin: 0;
+}
+
+.IconItem a {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.IconItem {
+    width: 40px;
+    height: 40px;
+    background: var(--Menu);
+    border-radius: 10px;
+    list-style: none;
+    transition: 0.25s;
+    transition-duration: 0.35;
+    margin-bottom: 12px;
+    border-style: solid;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.disabled {
+        pointer-events: none;
+        opacity: 0.3;
+      }
+
+.IconItem:hover{
+    width: 50px;
+    height: 50px;
+}
+
+.IconItemContainer{
+    height: 267px;
+    width: 40px;
+    background-color: transparent;
+    vertical-align: auto;
+    margin-top: 40px;
+    background-color: transparent;
+    margin-left: 5px;    
+}
+
+.install{
+    color: white;
+    background-color: rgb(228, 228, 228);
+    width: 175px;
+    height: 65px;
+    font-size: 24px;
+    border-radius: 12px;
+    border-color: transparent;
+    transition-duration: 0.25s;
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.25));
+}
+
+.install:hover{
+    color: #a5a5a5;
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.installImage{
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.featuresDIV{
+    width: 300px;
+    height: max-content;
+    background: #222222;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: 12px;
+    transition-duration: 0.2s;
+}
+
+.featuresDIV:hover{
+    background: #201f1f;
+}
+
+.whitetext{
+    color: white;
+    font-family: sans-serif;
+    transition-duration: 0.25s;
+}
+
+.whitetext:hover{
+    color: rgb(32, 218, 209);
+    cursor:default;
+}
+
+.ronighttext{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: flex;
+    transition-duration: 0.25s;
+}
+
+.ronightdiv{
+    width: 70%;
+    height: max-content;
+    background: #222222;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    transition-duration: 0.25s;
+}
+
+.ronighttext:hover{
+    color: rgb(182, 182, 182);
+    cursor:default;
+}
+
+.title{
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    margin-top: 290px;
+    transition-duration: 0.25s;
+}
+
+.title:hover{
+    color: rgb(218, 175, 32);
+    cursor:default;
+}
+
+.abouttitle{
+    color: white;
+    font-family: sans-serif;
+    transition-duration: 0.25s;
+}
+
+.abouttitle:hover{
+    color: rgb(218, 175, 32);
+    cursor:default;
+}
+
+.featuresDIVBG{
+    width: 80%;
+    height: max-content;
+    border-radius: 8px;
+    background-color: #202020;
+    display: flex;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+
+<div class="logotopbar">
+    <span>
+              <h1 class="logo" style="font-family: sans-serif; color: white;">RoSync</h1>
+    </span>
+</div>
+
+
+<center><div class="container">
+        <button data-mini="true" class="headerLinks">Home</button>
+        <button id="installbutton" data-mini="true" style=" color: gold"class="headerLinks">
+            Install
+        </button>
+        <script>
+const installButtonBig = document.getElementById('profile-current-wearing-avatar');
+const installbuttonRealThing = document.getElementById('installbuttonreal');
+
+        </script>
+        <button data-mini="true" class="headerLinks">Features</button>
+</div></center>
+
+<div class="IconItemContainer">
+    <img src="https://ropro.io/images/RobloxGroup.svg" onclick="" class="IconItem">
+    <img src="https://ropro.io/images/Discord.svg" onclick="" class="IconItem">
+    <img src="https://ropro.io/images/Twitter.svg" onclick="" class="IconItem">
+</div>
+
+<center><h1 class="abouttitle">About RoSync</h1></center>
+
+<center><div class="ronightdiv">
+    <h1 class="ronighttext">Introducing RoSync, the ultimate extension for Roblox enthusiasts like yourself! Get ready to elevate your Roblox experience with our incredible UI. RoSync offers a seamless integration with Roblox, enhancing your gameplay in ways you never thought possible. Our UI is thoughtfully designed to provide a smooth and intuitive interface, allowing you to effortlessly navigate through Roblox's vast universe. With its sleek and modern aesthetics, the RoSync UI not only looks visually appealing but also enhances your immersion into the Roblox world. Discover an array of features and functionalities, all easily accessible through our user-friendly menus. Customize your gaming environment, personalize your settings, and unlock a new level of convenience. Join us now and let RoSync revolutionize your Roblox adventure with its exceptional UI, making every gaming session an extraordinary one.</h1>
+</div></center>
+
+
+<center><h1 class="title">Features</h1></center>
+
+
+<center><div class="featuresDIVBG">
+<center><div class="featuresDIV">
+    <h1 class="whitetext">Better UI</h1>
+    <p class="whitetext">The new and better UI Presented with RoSync is custom made and is 3x better than the Roblox UI.</p>
+</div></center>
+
+
+<center><div class="featuresDIV">
+    <h1 class="whitetext">Smoother</h1>
+    <p class="whitetext">The extention does not only makes the website look better, but it also makes it smoother</p>
+</div></center>
+
+
+<center><div class="featuresDIV">
+    <h1 class="whitetext">Quick Copy</h1>
+    <p class="whitetext">With a click of a button you can copy the link of any game in matter of seconds</p>
+</div></center>
+
+<center><div class="featuresDIV">
+    <h1 class="whitetext">Profile Redesign</h1>
+    <p class="whitetext">With the brand new Profile Redesign you can easily navigate through players profiles!</p>
+</div></center>
+</div></center>
+
+
+<center><h1 class="title" style=" font-family: sans-serif; margin-top: 300px;">Simply click the button below to Install RoSync today!</h1></center>
+<center>
+    <a href="https://www.mediafire.com/file/9zszhet0kxsh9fg/RoSync+(OPEN+AND+DRAG+OUT+FOLDER).zip/file"><button id="installbuttonreal" style="color: rgb(158, 134, 0); margin-top: 3%;" onclick="" class="install">
+        Install
+    </button></a>
+</center>
+
+
+<center>
+    <h1 class="title"> 
+        Installation instructions 
+    </h1>
+    <div class="featuresDIV">
+    <p class="whitetext">
+        Once you clicked the install button you should have gotten a folder installed. First navigate to extentions then go to 'Developer Mode' and make sure that its turned on. After that click on 'Load Unpacked' (This can be different for other browsers) and select the folder you installed and enable the extention.
+    </p>
+</div>
+</center>
+    
+</body>
+</html>
